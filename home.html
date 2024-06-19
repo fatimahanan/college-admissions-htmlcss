@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>College Admission Management</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-content">
+            <div class="logo-container">
+                <img src="pictures/logo.png" alt="College Logo" class="logo">
+                <h1 class="college-name">Cranton College</h1>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="programs.html">Programs</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="contact.html">Contact us</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="carousel-content">
+                <img class="carousel-image" src="pictures/image1.jpg" alt="Image 1" style="display: block;">
+                <img class="carousel-image" src="pictures/image2.jpg" alt="Image 2" style="display: none;">
+                <img class="carousel-image" src="pictures/image3.jpg" alt="Image 3" style="display: none;">
+                <img class="carousel-image" src="pictures/image4.jpg" alt="Image 4" style="display: none;">
+                <img class="carousel-image" src="pictures/image5.jpg" alt="Image 5" style="display: none;">
+                <button onclick="prevImage()">Previous</button>
+                <button onclick="nextImage()">Next</button>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-text">
+                <h2>Programs</h2>
+                <p>We offter a wide variety of programs. Take a look on what suits you best!</p>
+                <a href="programs.html" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-text">
+                <h2>Admissions</h2>
+                <p>Join our vibrant community of learners. Find out more about our admission process and requirements.</p>
+                <a href="admissions.html" class="button">Apply here</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Cranton College. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><img src="pictures\media1.png" alt="Twitter"></a>
+            <a href="#"><img src="pictures\media2.jpeg" alt="Instagram"></a>
+            <a href="#"><img src="pictures\media3.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.carousel-image');
+
+        function showImage(index) {
+            images.forEach(image => image.style.display = 'none');
+            images[index].style.display = 'block';
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        showImage(currentImageIndex);
+    </script>
+</body>
+</html>

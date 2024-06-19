@@ -1,0 +1,159 @@
+body 
+{
+    background-color: #559eede2;
+    margin: 0;
+    padding: 0;
+}
+header 
+{
+      background-color: #003366;
+      color: #fff;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+}
+.navbar-content 
+{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin-left: 50px;
+      padding: 0 20px;
+}
+nav a 
+{
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+}
+nav a:hover 
+{
+      text-decoration: underline;
+}
+.logo-container 
+{
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      padding: 0;
+}              
+.logo 
+{
+      height: 50px;
+      margin-right: 10px;
+}
+.about 
+{
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    padding: 20px;
+}
+
+.header 
+{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px,0;
+}
+
+.header h1 
+{
+    font-size: 40px;
+    color: #121111;
+    padding: 20px;
+    margin: 0;
+}
+
+.header-title 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.slogan 
+{
+    font-style: italic;
+    font-size: larger;
+    color: #234489;
+}
+
+.team 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.member 
+{
+    width: 32%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.member img 
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.member h2 
+{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.member p 
+{
+    color:#234489;
+    margin: 5px 0;
+}
+
+.info
+{
+    background-color: #071177;
+    font-style: italic;
+    color: #aac2d2;
+    padding: 4px,10px;
+    margin: 0;
+}
+
+.info h2
+{
+    text-align: center;
+}
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+}

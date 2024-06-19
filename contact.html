@@ -1,0 +1,66 @@
+<head>
+    <title>HTML Contact</title>
+    <link rel="stylesheet" type="text/css" href="contactstyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-content">
+            <div class="logo-container">
+                <img src="pictures/logo.png" alt="College Logo" class="logo">
+                <h1 class="college-name">Cranton College</h1>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="programs.html">Programs</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="contact.html">Contact us</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Register</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="main">
+            <form action="">
+                <div class="header">
+                    <h1>Contact us</h1>
+                    <p1>Thank you for your interest in contacting us. Please use the form to reach out to our team.</p1>
+                </div>
+                <div class="content">
+                    <div class="form">
+                        <label for="firstname">First name:</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form">
+                        <label for="lastname">Last name:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form">
+                        <label for="message">Your message:</label>
+                        <input type="text" id="message" name="message" placeholder="Enter your message" style="height: 120px;" required>
+                    </div>
+                    <div class="wrap">
+                        <button type="submit" onclick="solve()" style="margin-top: 10px;">Send</button>
+                    </div>
+                </div>
+            </form>
+      </div>
+      <div class="image-container">
+        <img src="pictures/contactus.jpg" alt="Contact Us">
+      </div>
+    </div>
+</body>
+<footer>
+    <p>&copy; Cranton College. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#"><img src="pictures\media1.png" alt="Twitter"></a>
+        <a href="#"><img src="pictures\media2.jpeg" alt="Instagram"></a>
+        <a href="#"><img src="pictures\media3.png" alt="LinkedIn"></a>
+    </div>
+</footer>
+</html>
